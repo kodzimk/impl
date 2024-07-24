@@ -1,6 +1,6 @@
 #include<stdio.h>
-#include"..\implementations\vector_type.h"
-#include"..\implementations\string_type.h"
+#include"..\implementations\STL\vector_type.h"
+#include"..\implementations\DataType\string_type.h"
 
 #pragma warning(disable : 4996)
 

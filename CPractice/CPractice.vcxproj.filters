@@ -20,10 +20,10 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="implementations\vector_type.h">
+    <ClInclude Include="implementations\STL\vector_type.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="implementations\string_type.h">
+    <ClInclude Include="implementations\DataType\string_type.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
