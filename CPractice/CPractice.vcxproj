@@ -132,6 +132,7 @@
   <ItemGroup>
     <ClInclude Include="implementations\DataType\string_type.h" />
     <ClInclude Include="implementations\STL\queue_type.h" />
+    <ClInclude Include="implementations\STL\stack_type.h" />
     <ClInclude Include="implementations\STL\vector_type.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

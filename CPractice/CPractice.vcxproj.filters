@@ -29,5 +29,8 @@
     <ClInclude Include="implementations\STL\queue_type.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="implementations\STL\stack_type.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

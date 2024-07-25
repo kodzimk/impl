@@ -1,22 +1,25 @@
 #include<stdio.h>
-#include"..\implementations\STL\queue_type.h"
+#include"..\implementations\STL\stack_type.h"
 
 #pragma warning(disable : 4996)
 
 int main(void)
 {
-    queue* q = queue_create(2);
+    stack* q = stack_create(2);
     q = push(q, 2);
     q = push(q, 3);
     q = push(q, 4);
 
-   while(!empty(q))
-   {
-       printf("%d\n", front(q));
-       q = pop(q);
-    }
 
-    free_queue(q);
+    while (!empty(q))
+    {
+        printf("%d\n", top(q));
+        q = pop(q);
+     }
+
+    
+
+    free_stack(q);
 
     return 1;   
 }
