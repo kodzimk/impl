@@ -50,7 +50,7 @@
 
 	t_string* add_append(char symbol)
 	{
-		char* t = malloc(sizeof(char));
+		char* t = (char*)malloc(sizeof(char));
 		t[0] = symbol;
 
 		t_string* str = string_create((uint8_t)1);

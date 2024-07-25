@@ -24,7 +24,7 @@ void push_back(vector* vec, void* value)
 	void** temp = vec->data;
 
 	vec->size++;
-	vec->data = malloc(vec->size * sizeof(void*));
+	vec->data = (void**)malloc(vec->size * sizeof(void*));
 
 	for (int i = 0; i < vec->size - 1; i++)
 	{
@@ -40,7 +40,7 @@ void pop_back(vector* vec)
 	void** temp = vec->data;
 
 	vec->size--;
-	vec->data = malloc(vec->size * sizeof(void*));
+	vec->data = (void**)malloc(vec->size * sizeof(void*));
 
 	for (int i = 0; i < vec->size; i++)
 	{
@@ -57,7 +57,7 @@ void erase(vector* vec, int index)
 		void** temp = vec->data;
 
 		vec->size--;
-		vec->data = malloc(vec->size * sizeof(void*));
+		vec->data = (void**)malloc(vec->size * sizeof(void*));
 
 		int index1 = 0;
 		for (int i = 0; i < vec->size+1; i++)
@@ -79,7 +79,7 @@ void insert(vector* vec, void* value,int index)
 	{
 		vec->size++;
 		void** temp = vec->data;
-		vec->data = malloc(vec->size * sizeof(void*));
+		vec->data = (void**)malloc(vec->size * sizeof(void*));
 
 		for (int i = 0; i < vec->size - 1; i++)
 		{

@@ -1,17 +1,22 @@
 #include<stdio.h>
-#include"..\implementations\STL\vector_type.h"
-#include"..\implementations\DataType\string_type.h"
+#include"..\implementations\STL\queue_type.h"
 
 #pragma warning(disable : 4996)
 
 int main(void)
 {
-    t_string* str = append("sadasdaA");
+    queue* q = queue_create(2);
+    q = push(q, 2);
+    q = push(q, 3);
+    q = push(q, 4);
 
+   while(!empty(q))
+   {
+       printf("%d\n", front(q));
+       q = pop(q);
+    }
 
-    str = string_insert(str, 3, 's');
-  
-    free(str);
+    free_queue(q);
 
-    return 1;
+    return 1;   
 }
