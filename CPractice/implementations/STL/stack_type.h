@@ -5,6 +5,7 @@ typedef struct stack
 {
 	void** data;
 	size_t size;
+	
 }stack;
 
 stack* stack_create(void* value)
@@ -19,6 +20,7 @@ stack* stack_create(void* value)
 
 void free_stack(stack* q)
 {
+	if(q->data != NULL)
 	free(q->data);
 	free(q);
 }
@@ -42,7 +44,7 @@ stack* push(stack* q, void* value)
 
 int empty(stack* q)
 {
-	if (q->size >= 1)
+	if (q->size >=1)
 		return 0;
 
 	return 1;
@@ -65,6 +67,10 @@ stack* pop(stack* q)
 {
 	if (q->size >= 1)
 	{
+		int a = 0;
+		if (q->size == 1)
+			a = 1;
+
 		stack* temp = (stack*)malloc(sizeof(stack));
 		temp->size = q->size - 1;
 		temp->data = (void**)malloc(temp->size * sizeof(void*));

@@ -32,5 +32,8 @@
     <ClInclude Include="implementations\STL\stack_type.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="implementations\STL\linked_list.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
