@@ -8,3 +8,4 @@ i will create some c++ concept in c.Moreover i will implement them until they wi
 2) String(basic 10-15 functions)
 3) Queue(basic 10-15 functions)
 4) Stack(basic 10-15 functions)
+5) Linked-List(basic(5-10 functions)
